@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Random delay
-        run: |
-          DELAY=$((RANDOM % 10800))
-          sleep $DELAY
+      # - name: Random delay
+      #   run: |
+      #     DELAY=$((RANDOM % 10800))
+      #     sleep $DELAY
 
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -29,4 +29,4 @@ jobs:
       - name: Run script
         run: node index.js
         env:
-          GEMINI_API_KEY: AIzaSyDBAYFOW3E7aYrajtdlidhMhHL-OT7R7Gs
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
