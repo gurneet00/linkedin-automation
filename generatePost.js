@@ -27,6 +27,7 @@ async function generatePost() {
   const result = await model.generateContent(prompt);
   // Optional cleanup: you don't need 'await' for result.response 
   const response = result.response;
+  console.log(response);
   return response.text();
 }
 
