@@ -18,10 +18,10 @@ async function generatePost() {
     - Add storytelling
     - End with a question
     - Add 5 relevant hashtags
-    - First line must be bold using Unicode characters
     - Do not use markdown formatting
     - Do not wrap text in quotes
     - Output plain text only
+    - Do not bold any character
   `;
 
   const result = await model.generateContent(prompt);
