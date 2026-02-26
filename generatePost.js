@@ -16,6 +16,7 @@ async function generatePost() {
     - Add storytelling
     - End with a question
     - Add 5 relevant hashtags
+    - bold the keywords and first line
   `;
 
   const result = await model.generateContent(prompt);
